@@ -15,4 +15,7 @@ else
 fi
 
 pip install mist
-python ./mist_monitor/mist_monitor.py $1 $2
+
+PATH_TO_SCRIPT=`dirname $0`
+
+python $PATH_TO_SCRIPT/mist_monitor.py $1 $2
