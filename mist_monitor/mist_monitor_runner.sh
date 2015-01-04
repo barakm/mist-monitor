@@ -3,5 +3,16 @@
 # Usage:
 # 	mist_monitor_runner.sh <mist_username> <mist_password>
 
+if [ -d mist_venv ];
+then
+    echo "Activating existing virtual env"
+    . mist_venv/bin/activate
+else
+    mkdir mist_venv
+    echo "Creating new virtual env"
+    virtualenv mist_venv
+    . mist_venv/bin/activate
+fi
+
 pip install mist
-python ./mist_monitor.py $1 $2
+python ./mist_monitor/mist_monitor.py $1 $2
