@@ -10,6 +10,6 @@ setup(
     author_email='barakme@gmail.com',
     description='mist monitoring utilities',
     install_requires=[
-        'cist.client'
+        'mist.client'
     ]
 )
