@@ -50,6 +50,7 @@ def print_metrics():
         machineNode.set("name", running_machine.name)
         machineNode.set("cloud", running_machine.backend.title)
         machineNode.set("state", running_machine.info['state'])
+        machineNode.set("url", "https://mist.io/#/machines/%s" % running_machine.id)
 
     tree = ET.ElementTree(machinesNode)
 
@@ -57,6 +58,7 @@ def print_metrics():
     parsed_xml = xml.dom.minidom.parseString(xml_string)
     pretty_xml_string = parsed_xml.toprettyxml(indent="\t")
 
+    print "For a full report on all machines, see: https://mist.io/#/machines"
     print pretty_xml_string
 
     text_file = open("output.xml", "w")
