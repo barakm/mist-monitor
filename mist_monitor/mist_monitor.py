@@ -7,14 +7,14 @@
 #
 # <?xml version="1.0" ?>
 # <machines>
-#   <machine cloud="EC2 EU Ireland - ec2Demo" name="vagrant cloudify hubot" state="running"/>
-#   <machine cloud="HP - US East - hpcloud-paid-dev2" name="ui-staging" state="running"/>
-#   <machine cloud="HP - US West - hpcloud-paid-dev1" name="cloudify-management-server" state="running"/>
-#   <machine cloud="HP - US East - hpcloud-paid-dev1" name="nightly-server_nodecellar_dep_nodejs_vm_ea760" state="running"/>
-#   <machine cloud="HP - US East - hpcloud-paid-dev1" name="cloudify-management-server-itsik" state="running"/>
-#   <machine cloud="HP - US East - hpcloud-paid-dev1" name="nightly-server_monitoring_dep_vm_70910" state="running"/>
-#   <machine cloud="HP - US East - hpcloud-paid-dev1" name="nightly-server_nodecellar_dep_mongod_vm_36cf4" state="running"/>
-#   <machine cloud="HP - US East - hpcloud-paid-dev3" name="cloudify-management-server-ranz" state="running"/>
+#   <machine cloud="EC2 EU Ireland - aws" name="vagrant cloudify hubot" state="running"/>
+#   <machine cloud="HP - US East - tenant2" name="ui-staging" state="running"/>
+#   <machine cloud="HP - US West - tenant1" name="cloudify-management-server" state="running"/>
+#   <machine cloud="HP - US East - tenant1" name="nightly-server_nodecellar_dep_nodejs_vm_ea760" state="running"/>
+#   <machine cloud="HP - US East - tenant1" name="cloudify-management-server-itsik" state="running"/>
+#   <machine cloud="HP - US East - tenant1" name="nightly-server_monitoring_dep_vm_70910" state="running"/>
+#   <machine cloud="HP - US East - tenant1" name="nightly-server_nodecellar_dep_mongod_vm_36cf4" state="running"/>
+#   <machine cloud="HP - US East - tenant3" name="cloudify-management-server2" state="running"/>
 # </machines>
 __author__ = 'barakme'
 
